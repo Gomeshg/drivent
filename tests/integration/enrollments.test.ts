@@ -190,7 +190,7 @@ describe("POST /enrollments", () => {
     describe("when body is invalid", () => {
       const generateInvalidBody = () => ({
         name: faker.name.findName(),
-        cpf: generateCPF(),
+        // cpf: generateCPF(),
         birthday: faker.date.past().toISOString(),
         phone: "(21) 98999-9999",
         address: {
